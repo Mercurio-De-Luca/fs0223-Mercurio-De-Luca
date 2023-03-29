@@ -1,0 +1,13 @@
+#margin {
+    text-align: center;
+}
+.contenuto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.primaparte {
+    width: 700px;
+    margin: 0,auto;
+}
+
