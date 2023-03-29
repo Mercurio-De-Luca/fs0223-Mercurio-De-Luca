@@ -1,13 +1,58 @@
-#margin {
+body{
+    color: rgb(97, 77, 77);
+}
+#contenuto-alto {
     text-align: center;
 }
-.contenuto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logo-principale img {
+    width: 180px;
 }
-.primaparte {
-    width: 700px;
-    margin: 0,auto;
+.primo-titolo p {
+    background-color: #f5f3ec;
+    border-top: 1px solid yellow;
+    padding: 15px;
 }
-
+#contenuto {
+    width: 600px;
+    margin: auto;
+}
+#focaccia figure{
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+#focaccia figure figcaption {
+    text-align: center;
+    color: rgb(209, 173, 173);
+    margin-top: 1em;
+}
+#focaccia img {
+    border-radius: 8px;
+    width: 600px;
+}
+.featured{
+    border-left: 1px solid yellow;
+    padding-left: 1rem;
+    margin-top: 2rem
+}
+.feat1 {
+    color: red;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.feat2 {
+    color: rgb(209, 173, 173);
+    margin-top: 0;
+    margin-bottom:0;
+}
+#titolo-lista h3 {
+    margin-top: 3em;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.5em;
+} 
+#method h3 {
+    margin-top: 3em;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.5em;
+}
