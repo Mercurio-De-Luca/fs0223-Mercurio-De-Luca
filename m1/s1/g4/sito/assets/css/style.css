@@ -33,12 +33,31 @@ body {
     text-decoration: none;
     padding: 0.2em;
 }
-.menu-navigazione li {
+.menu-navigazione li{
     padding: 0.3em;
 }
 
 
 /* MAIN */
+#secondo-blocco {
+    box-shadow:  5px  5px 5px #dedede,
+                 5px  5px 5px #dedede;
+    margin: 1em;
+    border: 1px;
+    background-color: white;
+}
+.titolo-main {
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.autore {
+    color: rgb(126, 135, 149);
+    font-size: 1.3em;
+    padding-bottom: 2em;
+}
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
