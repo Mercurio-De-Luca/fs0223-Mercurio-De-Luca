@@ -46,6 +46,7 @@ body {
     border: 1px;
     background-color: white;
 }
+/* ELEMENTI NEL MAIN - ARTICLE */
 .titolo-main {
     margin: 0;
     padding-top: 1em;
@@ -58,8 +59,13 @@ body {
     font-size: 1.3em;
     padding-bottom: 2em;
 }
+.testo{
+    font-size: 1.3em;
+}
+.testo p strong{
+    color: blue;
+}
 
-/* ELEMENTI NEL MAIN - ARTICLE */
 
 /* TABELLE */
 
