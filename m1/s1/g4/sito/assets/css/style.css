@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/sfondo.png);
+}
+/* HEADER */
+#primo-blocco {
+    margin: 1em;
+    border: 1px;
+    text-align: center;
+    background-color: #3987a7;
+}
+.logo {
+    width: 400px;
+    height: 100px;
+    padding: 2em;
+    
+}
+.primo-titolo {
+    font-size: 1.5em;
+    color: white;
+}
+.menu-navigazione {
+    padding: 2em;
+    list-style: none;
+}
+.menu-navigazione a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 0.2em;
+}
+.menu-navigazione li {
+    padding: 0.3em;
+}
+
+
+/* MAIN */
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
