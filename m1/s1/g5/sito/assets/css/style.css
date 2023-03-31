@@ -1,0 +1,76 @@
+/* Your styles here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+body {
+    color: #393d41;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+#parte-alta {
+    background-color: black;
+}
+#logo img {
+    width: 35%;
+    padding: 1.5em;
+}
+#sezione1 {
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.testo1 h1 {
+    font-size: 2em;
+    padding: 1em;
+    
+}
+.testo1 p{
+    padding: 0 1em 1em 1em;
+}
+#pulstante {
+    background-color: #f04c2f;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em 2em 1em 2em;
+    margin: 1em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+}
+#sezione2 {
+    margin: 2em;
+}
+.testi {
+    padding: 1em;
+}
+.notebook img {
+    border-radius: 100%;
+    width: 100%;
+}
+#sezione3 {
+    background-color: #e22d0e;
+    color: white;
+}
+.testimoniale {
+    padding: 1em;
+}
+.testimoniale h2 {
+    color: white;
+    margin-top: 1.2em;
+    font-size: 2em;
+}
+.testimoniale p {
+    font-style: italic;
+}
+.mario {
+    font-size: 1.5em;
+}
+.testimoniale1 {
+    padding-bottom: 3em;
+}
+

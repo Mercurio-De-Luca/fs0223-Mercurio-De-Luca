@@ -111,10 +111,14 @@ body {
     font-style: oblique;
     font-weight: bold;
 }
-.table thead {
-    background-color: #6767e3;
+.table th {
+    background-color: #6868e1;
     font-size: 1.3em;
-    height: 50%;
+    padding-bottom: 2em;
+    width: 100%;
+}
+.table td {
+    border: 1px;
 }
 .link {
     font-size: 1.3em;
