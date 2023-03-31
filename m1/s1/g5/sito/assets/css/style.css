@@ -64,13 +64,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1.2em;
     font-size: 2em;
 }
-.testimoniale p {
+.mario {
     font-style: italic;
 }
-.mario {
-    font-size: 1.5em;
-}
 .testimoniale1 {
-    padding-bottom: 3em;
+    padding: 1.5em;
+}
+#sezione4 {
+    margin: 2em;
+    border: 1px solid;
+}
+.articolo1 img{
+    width: 100%;
 }
 
