@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #25a2c3;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
+    padding: 1em;
 }
 #parte-alta {
     background-color: black;
@@ -27,8 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .testo1 h1 {
     font-size: 2em;
-    padding: 1em;
-    
 }
 .testo1 p{
     padding: 0 1em 1em 1em;
@@ -46,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 2em;
 }
 .testi {
-    padding: 1em;
+    padding: 0 1em 1em 1em;
 }
 .notebook img {
     border-radius: 100%;
@@ -56,25 +55,44 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #e22d0e;
     color: white;
 }
-.testimoniale {
-    padding: 1em;
+.testimonianze {
+    padding: 0.5em;
 }
-.testimoniale h2 {
-    color: white;
-    margin-top: 1.2em;
-    font-size: 2em;
-}
-.mario {
+.testimonianze p {
     font-style: italic;
 }
-.testimoniale1 {
+.testimonianze h2 {
+    color: white;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+.mario {
+    font-size: 1.5em;
+}
+.testimonianze1 {
     padding: 1.5em;
 }
-#sezione4 {
+.sezione4 {
     margin: 2em;
-    border: 1px solid;
+    padding-bottom: 2em;
+    border: 1px solid #dee1e3;
 }
 .articolo1 img{
     width: 100%;
+}
+#piedipagina {
+    background-color: #25a2c3;
+    padding: 1em;
+}
+.contatti {
+    color: #c8e7f0;
+    margin-bottom: 2em;
+}
+.contatti a {
+    color: #c8e7f0;
+}
+#piedipagina h2 {
+    color: white;
+    font-size: 2em;
 }
 
