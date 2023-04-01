@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #25a2c3;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    padding: 1em;
+    margin: 1em;
 }
 #parte-alta {
     background-color: black;
@@ -28,16 +28,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .testo1 h1 {
     font-size: 2em;
+    padding: 1em 1em 0.5em 1em;
+    margin: 0 1em 0 1em ;
 }
 .testo1 p{
-    padding: 0 1em 1em 1em;
+    padding: 0 4em 2em 4em;
 }
 #pulstante {
     background-color: #f04c2f;
     color: white;
     font-family: 'Montserrat', sans-serif;
     padding: 1em 2em 1em 2em;
-    margin: 1em;
     margin-bottom: 2em;
     border-radius: 10px;
 }
@@ -64,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 .testimonianze h2 {
     color: white;
     font-size: 2em;
-    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 .mario {
     font-size: 1.5em;
@@ -73,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1.5em;
 }
 .sezione4 {
-    margin: 2em;
+    margin: 2em 2em 4em 2em;
     padding-bottom: 2em;
     border: 1px solid #dee1e3;
 }
@@ -94,5 +95,6 @@ h1, h2, h3, h4, h5, h6 {
 #piedipagina h2 {
     color: white;
     font-size: 2em;
+    margin: 0.5em;
 }
 
