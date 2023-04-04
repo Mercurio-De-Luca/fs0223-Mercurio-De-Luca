@@ -42,7 +42,7 @@ console.log(x)
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-var nome = 'De Luca';
+nome = 'De Luca';
 console.log(name)
 
 const cognome = 'De Luca';
