@@ -1,0 +1,109 @@
+body {
+    background-color: #E9EDEE;
+}
+
+#sfondo {
+    background-color: #222F3F;
+}
+.img {
+    width: 200px;
+    margin: 10px 0 20px 50px;
+}
+#navigazione {
+    background-color: #364759;
+    padding-left: 20px;
+}
+.bottone {
+    display: inline-block;
+    color: white;
+    font-family: sans-serif;
+    margin: 10px;
+}
+#contenuto {
+    text-align: center;
+}
+#arancione {
+    background-color: #F56600;
+    margin: 20px;
+    padding: 15px;
+    font-family: sans-serif;
+    color: white;
+}
+#primaimag {
+    background-image: url(../assets/bg-image.png);
+    background-position: center;
+    background-size: 100%;
+    margin: 20px;
+    padding: 15px;
+}
+.titolo {
+    color: white;
+    font-family: helvetica;
+    font-size: 1.5em;
+    margin: 20px;
+}
+.sottotitolo {
+    color: white;
+    font-family: helvetica;
+    font-size: 1.2em;
+    margin: 10px;
+}
+.titoloblocchi {
+    display: inline-block;
+    font-family:sans-serif; 
+    margin: 10px;
+}
+.blocchi {
+    display: inline-block;
+}
+.blocco {
+    width: 300px;
+    height: 350px;
+    border-radius: 10%;
+    padding: 5px;
+}
+#contenuto2 {
+    margin: 20px;
+   background-color: white;
+   padding: 15px;
+}
+.img9 {
+    width: 1310px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+#testoimg9 {
+    text-align: center;
+}
+.game {
+    display: inline-block;
+    margin-top: 0;
+    font-family: sans-serif;
+}
+.img10 {
+    width: 1310px;
+    margin: 20px;
+    margin-bottom: 0;
+}
+#testoimg10 {
+    text-align: center;
+}
+.music {
+    display: inline-block;
+    margin-top: 0;
+    font-family: sans-serif;
+}
+#piedipagina {
+    text-align: center;
+}
+#ultimaimg {
+    background-color: #222F3F;
+}
+#portasu {
+    background-color: #364759;
+}
+.back {
+    color: white;
+    font-family: helvetica;
+    margin: 200px;
+}
