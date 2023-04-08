@@ -57,6 +57,10 @@ const cars = [
     trims: ['life', 'style', 'r-line'],
   },
 ]
+cars[0].licensePlate= '123456';
+cars[1].licensePlate= '1234567';
+cars[2].licensePlate= '12345678';
+console.log(cars);
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
@@ -68,11 +72,25 @@ cars.push({
   color: 'blue',
   trims: ['titanium','st', 'active'],
 })
+cars[0].trims.pop();
+cars[1].trims.pop();
+cars[2].trims.pop();
+cars[3].trims.pop();
+cars[3].licensePlate= '123456789';
 console.log(cars);
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = []
+cars[0].trims[0];
+justTrims.push(cars[0].trims[0]);
+cars[1].trims[0];
+justTrims.push(cars[1].trims[0]);
+cars[2].trims[0];
+justTrims.push(cars[2].trims[0]);
+cars[3].trims[0];
+justTrims.push(cars[3].trims[0]);
+console.log(justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
