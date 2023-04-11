@@ -105,7 +105,8 @@ const starWarsCharacters = [
 Crea una variabile chiamata "characters" e inserisci un array vuoto
 */
 
-let characters = [];
+let characters =[];
+
 
 /* ESERCIZIO 2
 Usando un for loop, cicla l'array "starWarsCharacters" ed accedi alla proprietà "name". 
@@ -113,55 +114,31 @@ Usa il valore contenuto inserendolo nell'array creato precedentemente.
 Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
 
-for( let i = 0; i < starWarsCharacters.length; i++ ) {
-  document.write( starWarsCharacters[i].name + '<br>' );
+for(let nomi of starWarsCharacters){
+  characters.push(nomi.name);
 }
-
+console.log(characters);
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un array chiamato "femaleCharacters" e inserisci un oggetto con questa struttura: 
   {name: Leia Organa, hair_color: "brown", eye_color: "brown"}
 */
-let femaleCharacters = [
-  {
-    name: "Leia Organa",
-    hair_color: "brown",
-    eye_color: "brown"
-  }
-];
+
+const femaleCharacters = [];
+
+for(let n in femaleCharacters){
+  
+}
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia come proprietà: blue, yellow, brown, red, blue-gray.
   ognuna di queste proprietà contiene un array vuoto
 */
-let eyeColors = {
-  blue : [],
-  yellow : [],
-  brown : [],
-  red : [],
-  blueGray : []
-}
+
 
 /* ESERCIZIO 5
   Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato
   Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio
   */
-switch( starWarsCharacters.hair_color ) {
-  case "brown":
-    eyeColors.brown
-  break;
-  case "yellow":
-    eyeColors.yellow
-  break;
-  case "red":
-    eyeColors.red
-  break;
-  case "blue":
-    eyeColors.blue
-  break;
-  case "blue-gray":
-    eyeColors.blueGray
-  break;
-}  
-console.log(eyeColors);
+
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio
   */
