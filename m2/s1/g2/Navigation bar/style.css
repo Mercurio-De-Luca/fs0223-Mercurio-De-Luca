@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+#barra {
+    background-color: #FBF7E3;
+    border: 1px none;
+    border-radius: 30%;
+}
+#barra ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+#barra li {
+    background-color: #F3DF85;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px none;
+    border-radius: 80px;
+}
+.shop {
+    width: 100px;
+    height: 50px;
+    font-size: 2em;
+}
+.shop img {
+    width: 40%;
+}

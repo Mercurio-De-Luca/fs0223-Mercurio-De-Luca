@@ -1,0 +1,16 @@
+#conteiner {
+    background-color: #FBF7E3;
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+.testo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.immagine img{
+   width: 285px;
+    margin: 10px;
+}
