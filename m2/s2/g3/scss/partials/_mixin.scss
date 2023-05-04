@@ -1,0 +1,7 @@
+@mixin leyautBody {
+    width: 100%;
+}
+@mixin navBar {
+    display: flex;
+    justify-content: space-between;
+}

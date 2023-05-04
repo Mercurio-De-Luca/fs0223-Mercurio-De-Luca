@@ -1,0 +1,37 @@
+body {
+    @include leyautBody;
+    nav{
+        @include navBar;
+        img {
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                margin: 10px;
+            }
+        }
+    }
+}
+.bg {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+    div {
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            margin: 10px;
+        }
+    }
+}
