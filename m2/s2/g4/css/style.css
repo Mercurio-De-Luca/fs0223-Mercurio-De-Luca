@@ -1,0 +1,22 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.wI {
+    width: 100px;
+}
+.kids-icon {
+    width: 30px; 
+}
+.animation:hover {
+    transform: scale(1.3);
+}
+
+@media screen and (min-width: 768px){
+    .b1 {
+        width: 25%;
+    }
+    .b2 {
+        width: 50%;
+    }
+    .b3 {
+        width: 100%;
+    }
+}

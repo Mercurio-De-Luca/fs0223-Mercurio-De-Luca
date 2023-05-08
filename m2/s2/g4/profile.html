@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="text-light bg-black">
+      <!--Header  -->
+      <header>
+        <nav class="navbar">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img class="wI mt-5" src="assets/netflix_logo.png" alt="logo">
+            </a>
+          </div>
+        </nav>
+      </header>
+      <!-- Main -->
+      <main>
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-6 mt-5 border-bottom border-secondary">
+              <h2 class="display-1 fw-semibolder">Edit Profile</h2>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center mt-3">
+            <div class="col-6 col-lg-2">
+              <img class="w-75" src="assets/avatar.png" alt="avatar">
+            </div>
+            <div class="col-6 col-lg-4 border-bottom border-secondary">
+              <h5 class="bg-secondary p-2">Steve Student</h5>
+              <p class="mt-5 mb-0 fs-5">Language:</p>
+              <select class="form-select w-auto bg-black rounded-0 text-light shadow-none border border-1 border-light mb-3">
+                <option class="text-bg-dark">English</option>
+                <option class="text-bg-dark">Italian</option>
+                <option class="text-bg-dark">German</option>
+                <option class="text-bg-dark">French</option>
+                </select>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="d-none d-lg-flex col-2">
+            </div>
+            <div class="col-12 col-lg-4 border-bottom border-secondary">
+              <p class="mt-3">Maturity Settings:</p>
+              <h5 class="bg-dark p-2">ALL MATURITY RATINGS</h5>
+              <p>Show titles of all maturity ratings for this profile.</p>
+              <button type="button" class="btn text-secondary border-secondary btn-outline-light px-4 mb-3">EDIT</button>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="d-none d-lg-flex col-2  border-bottom border-secondary">
+            </div>
+            <div class="col-12 col-lg-4 border-bottom border-secondary ">
+              <p class="mt-3 fs-4 mb-0">Autoplay controls</p>
+              <div class="mb-1 d-flex">
+                <input class="form-check-input mt-0 bg-dark fs-4" type="checkbox">
+                <label>Autoplay next eplsode in a series on all devices.</label>
+              </div>
+              <div class="mb-3 d-flex">
+                <input class="form-check-input mt-0 bg-dark fs-4" type="checkbox">
+                <label>Autoplay prevlews while browsing on all devices.</label>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center ">
+            <div class="col-6 mt-3 d-flex justify-content-center">
+              <button type="button" class="b1 btn text-secondary border-secondary btn-outline-light px-4 mx-2">SAVE</button>
+              <button type="button" class="b2 btn text-secondary border-secondary btn-outline-light px-4 mx-2">CANCEL</button>
+              <button type="button" class="b3 btn text-secondary border-secondary btn-outline-light px-4 mx-2">DELETE PROFILE</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
