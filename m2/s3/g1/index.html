@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>FORM PER CREARE OGGETTI(PETS)</h1>
+    <form id="pet-form">
+      <label for="pet-name">Nome Animale:</label>
+      <input type="text" id="pet-name" name="petName" required />
+
+      <label for="owner-name">Nome Proprietario:</label>
+      <input type="text" id="owner-name" name="ownerName" required />
+
+      <label for="species">Specie:</label>
+      <input type="text" id="species" name="species" required />
+
+      <label for="breed">Razza:</label>
+      <input type="text" id="breed" name="breed" required />
+
+      <button type="submit">Aggiungi Animale</button>
+    </form>
+
+    <ul id="pet-list"></ul>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
