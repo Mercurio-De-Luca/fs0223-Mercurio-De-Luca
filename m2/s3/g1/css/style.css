@@ -1,8 +1,7 @@
-form {
+#pet-form {
     display: flex;
     flex-direction: column;
-  }
-  input,
-  button {
+}
+input, button {
     width: 250px;
-  }
+}

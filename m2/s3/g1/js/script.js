@@ -24,6 +24,13 @@ console.log(persona1.confronto(persona2));
 console.log(persona2.confronto(persona1));
 
 //SECONDO ESERCIZIO
+let petList = [];
+
+let petName = document.querySelector("#pet-name");
+let ownerName = document.querySelector("#owner-name");
+let species = document.querySelector("#species");
+let breed = document.querySelector("#breed");
+
 class Pet {
   constructor(petName, ownerName, species, breed) {
     this.petName = petName;
@@ -31,25 +38,51 @@ class Pet {
     this.species = species;
     this.breed = breed;
   }
+
+  stessoPadrone = function (p) {
+    if (this.ownerName === p.ownerName) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 }
 
-const petForm = document.querySelector("#pet-form");
-const petList = document.querySelector("#pet-list");
+let petForm = document.querySelector("#pet-form");
+let lista = document.querySelector("#pet-list");
 
-petForm.addEventListener("submit", (event) => {
-  event.preventDefault();
+document.querySelector("#button-owner").addEventListener("click", () => {
+  let lastPet = petList[petList.length - 1];
+  let oneToLastPet = petList[petList.length - 2];
+  alert(lastPet.stessoPadrone(oneToLastPet));
+});
 
-  const formData = new FormData(event.target);
-  const petName = formData.get("petName");
-  const ownerName = formData.get("ownerName");
-  const species = formData.get("species");
-  const breed = formData.get("breed");
+let petHtml = function () {
+  petList.forEach((pet) => {
+    let newLi = document.createElement("li");
+    newLi.innerText = `Il pet si chiama ${pet.petName}, è un ${pet.species} ${pet.breed} ed il proprietario è ${pet.ownerName}`;
+    lista.appendChild(newLi);
+  });
+};
 
-  const newPet = new Pet(petName, ownerName, species, breed);
+const svuotaList = function () {
+  lista.innerText = "";
+};
 
-  const li = document.createElement("li");
-  li.textContent = `${newPet.petName} ${newPet.species}  ${newPet.breed}  Proprietario: ${newPet.ownerName}`;
-  petList.appendChild(li);
+petForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let newPet = new Pet(
+    petName.value,
+    ownerName.value,
+    species.value,
+    breed.value
+  );
+
+  petList.push(newPet);
+  console.log(petList);
+  svuotaList();
+  petHtml();
 
   petForm.reset();
 });

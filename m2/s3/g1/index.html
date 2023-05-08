@@ -8,25 +8,30 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>FORM PER CREARE OGGETTI(PETS)</h1>
+    <h1>Iscrivi il tuo animale</h1>
     <form id="pet-form">
-      <label>Nome Animale:</label>
-      <input type="text" id="pet-name" name="petName" />
-
-      <label>Nome Proprietario:</label>
-      <input type="text" id="owner-name" name="ownerName" />
-
-      <label>Specie:</label>
-      <input type="text" id="species" name="species" />
-
-      <label>Razza:</label>
-      <input type="text" id="breed" name="breed" />
-
-      <button type="submit">Aggiungi Animale</button>
+      <label for="petName">Nome animale</label>
+      <input
+        type="text"
+        placeholder="Nome animale"
+        name="petNome"
+        id="pet-name"
+      />
+      <label for="ownerName">Nome proprietario</label>
+      <input
+        type="text"
+        placeholder="Nome proprietario"
+        name="ownerName"
+        id="owner-name"
+      />
+      <label for="species">Specie</label>
+      <input type="text" placeholder="Specie" name="species" id="species" />
+      <label for="breed">Razza</label>
+      <input type="text" placeholder="Razza" name="breed" id="breed" />
+      <button type="submit">Iscrivi animale</button>
     </form>
-
     <ul id="pet-list"></ul>
-
+    <button id="button-owner">Confronta i padroni</button>
     <script src="js/script.js"></script>
   </body>
 </html>
