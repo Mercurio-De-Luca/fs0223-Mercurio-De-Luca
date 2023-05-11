@@ -1,7 +1,6 @@
-const removeCard = function () {
-  let card = document.getElementsById("card");
+const removeCard = function (par) {
+  par.closest(".col").remove();
 };
-
 fetch("https://striveschool-api.herokuapp.com/books")
   .then((res) => {
     if (res.ok) {
@@ -22,7 +21,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
         <div class="card-body">
         <h5 class="card-title">${book.title}</h5>
         <p class="card-text">${book.price} €</p>
-        <a href="#" class="btn btn-primary" onclick="" >Scarta</a>
+        <button type="button" class="btn btn-primary" onclick="removeCard(this)">Scarta</button>
         </div>
         </div>`;
       row.appendChild(col);
