@@ -24,6 +24,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
         <button type="button" class="btn btn-primary" onclick="removeCard(this)">Scarta</button>
         </div>
         </div>`;
+      col.style.height = "700px";
       row.appendChild(col);
     });
   })
