@@ -1,6 +1,6 @@
 console.log('hello');
 
-let player1: number = 35;
+let player1: number = 3;
 let player2: number = 89;
 
 let n: number = Math.floor(Math.random() * (100-1) + 1);

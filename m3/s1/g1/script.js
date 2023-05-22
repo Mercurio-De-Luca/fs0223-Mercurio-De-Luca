@@ -1,5 +1,5 @@
 console.log('hello');
-var player1 = 35;
+var player1 = 3;
 var player2 = 89;
 var n = Math.floor(Math.random() * (100 - 1) + 1);
 console.log(n);
