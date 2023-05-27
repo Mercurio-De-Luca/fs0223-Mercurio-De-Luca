@@ -36,13 +36,13 @@ class Phone implements ISmamartphone {
         return  this.numeroChiamate;
     }
     chiamata(min:number):void{
-        let costChia = min * this.costoMinuto;
+        let costChia: number = min * this.costoMinuto;
         if(costChia <= this.carica){
             this.carica -= costChia;
             this.numeroChiamate++;
-            let id = this.numeroChiamate;
-            let durata = min;
-            let dataOra = new Date ();
+            let id: number = this.numeroChiamate;
+            let durata: number = min;
+            let dataOra: Date = new Date ();
             this. registroChiamate.push({id, durata, dataOra});
         }else{
             console.log('Credito insufficiente');           
@@ -53,7 +53,7 @@ class Phone implements ISmamartphone {
         this.registroChiamate = [];
     }
     mostraRegistroChiamate(): void{
-        this.registroChiamate.forEach((c) => {
+        this.registroChiamate.forEach((c): void => {
             console.log(`Numero delle chiamate: ${c.id} Durata: ${c.durata} Data e ora: ${c.dataOra}`);           
         })
     }
@@ -62,77 +62,77 @@ class Phone implements ISmamartphone {
     }
 }
 
-let user1 = new Phone(2, 0, 0.20, [])
-console.log('user1');
+let tel1 = new Phone(2, 0, 0.20, [])
+console.log('tel1');
 
-user1.ricarica(2);
-console.log(user1.numero404())
-user1.chiamata(20)
-console.log(user1.numero404())
-user1.chiamata(20)
-console.log(user1.numero404())
-user1.chiamata(20)
-user1.ricarica(3);
-console.log(user1.numero404())
-user1.chiamata(5)
-console.log(user1.numero404())
-console.log(user1.getNumeroChiamate());
-user1.chiamata(5)
-console.log(user1.numero404())
-console.log(user1.getNumeroChiamate());
-user1.mostraRegistroChiamate();
-user1.azzeraChiamate();
-console.log(user1.getNumeroChiamate());
-
-console.error('=======================================================');
-
-let user2 = new Phone(0, 0, 0.20, [])
-console.log('user2');
-
-user2.ricarica(4);
-console.log(user2.numero404())
-user2.chiamata(2)
-console.log(user2.numero404())
-user2.chiamata(20)
-console.log(user2.numero404())
-user2.chiamata(7)
-user2.ricarica(3);
-console.log(user2.numero404())
-user2.chiamata(5)
-console.log(user2.numero404())
-console.log(user2.getNumeroChiamate());
-user2.chiamata(5)
-console.log(user2.numero404())
-console.log(user2.getNumeroChiamate());
-user2.mostraRegistroChiamate();
-user2.azzeraChiamate();
-console.log(user2.getNumeroChiamate());
+tel1.ricarica(2);
+console.log(tel1.numero404())
+tel1.chiamata(20)
+console.log(tel1.numero404())
+tel1.chiamata(20)
+console.log(tel1.numero404())
+tel1.chiamata(20)
+tel1.ricarica(3);
+console.log(tel1.numero404())
+tel1.chiamata(5)
+console.log(tel1.numero404())
+console.log(tel1.getNumeroChiamate());
+tel1.chiamata(5)
+console.log(tel1.numero404())
+console.log(tel1.getNumeroChiamate());
+tel1.mostraRegistroChiamate();
+tel1.azzeraChiamate();
+console.log(tel1.getNumeroChiamate());
 
 console.error('=======================================================');
 
+let tel2 = new Phone(0, 0, 0.20, [])
+console.log('tel2');
 
-let user3 = new Phone(5, 0, 0.20, [])
-console.log('user3');
+tel2.ricarica(4);
+console.log(tel2.numero404())
+tel2.chiamata(2)
+console.log(tel2.numero404())
+tel2.chiamata(20)
+console.log(tel2.numero404())
+tel2.chiamata(7)
+tel2.ricarica(3);
+console.log(tel2.numero404())
+tel2.chiamata(5)
+console.log(tel2.numero404())
+console.log(tel2.getNumeroChiamate());
+tel2.chiamata(5)
+console.log(tel2.numero404())
+console.log(tel2.getNumeroChiamate());
+tel2.mostraRegistroChiamate();
+tel2.azzeraChiamate();
+console.log(tel2.getNumeroChiamate());
+
+console.error('=======================================================');
 
 
-user3.ricarica(10);
-console.log(user3.numero404())
-user3.chiamata(50)
-console.log(user3.numero404())
-user3.chiamata(2)
-console.log(user3.numero404())
-user3.chiamata(20)
-user3.ricarica(3);
-console.log(user3.numero404())
-user3.chiamata(5)
-console.log(user3.numero404())
-console.log(user3.getNumeroChiamate());
-user3.chiamata(5)
-console.log(user3.numero404())
-console.log(user3.getNumeroChiamate());
-user3.mostraRegistroChiamate();
-user3.azzeraChiamate();
-console.log(user3.getNumeroChiamate());
+let tel3 = new Phone(5, 0, 0.20, [])
+console.log('tel3');
+
+
+tel3.ricarica(10);
+console.log(tel3.numero404())
+tel3.chiamata(50)
+console.log(tel3.numero404())
+tel3.chiamata(2)
+console.log(tel3.numero404())
+tel3.chiamata(20)
+tel3.ricarica(3);
+console.log(tel3.numero404())
+tel3.chiamata(5)
+console.log(tel3.numero404())
+console.log(tel3.getNumeroChiamate());
+tel3.chiamata(5)
+console.log(tel3.numero404())
+console.log(tel3.getNumeroChiamate());
+tel3.mostraRegistroChiamate();
+tel3.azzeraChiamate();
+console.log(tel3.getNumeroChiamate());
 
 
 
