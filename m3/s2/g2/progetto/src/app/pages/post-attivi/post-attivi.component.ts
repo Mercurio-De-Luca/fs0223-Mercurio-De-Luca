@@ -9,11 +9,7 @@ import { PostService } from 'src/app/post.service';
 })
 export class PostAttiviComponent {
 
-  posts: any[] = [];
 
-  constructor(private postSvc: PostService){
-    postSvc.getActivePosts()
-  }
 
 }
 
