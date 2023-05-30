@@ -1,1 +1,8 @@
-<p>post-inattivi works!</p>
+<table class="table">
+  <tr *ngFor="let post of postArray">
+    <td>{{ post.id }}</td>
+    <td>{{ post.title }}</td>
+    <td>{{ post.body }}</td>
+    <td>{{ post.active }}</td>
+  </tr>
+</table>
