@@ -1,0 +1,18 @@
+nav{
+  background-color: black;
+  border-bottom: 1px solid orange;
+  ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    list-style: none;
+    margin-top: 0;
+    li{
+      margin: 20px;
+      a {
+        text-decoration: none;
+         color: rgb(224, 105, 8);
+      }
+    }
+  }
+}

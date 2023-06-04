@@ -1,0 +1,39 @@
+{
+  "todo": [
+    {
+      "title": "HTML",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "title": "CSS",
+      "completed": true,
+      "id": 2
+    },
+    {
+      "title": "JS",
+      "completed": true,
+      "id": 3
+    },
+    {
+      "title": "Bootsrap",
+      "completed": true,
+      "id": 4
+    },
+    {
+      "title": "SASS",
+      "completed": true,
+      "id": 5
+    },
+    {
+      "title": "TS",
+      "completed": true,
+      "id": 6
+    },
+    {
+      "title": "Angular",
+      "completed": true,
+      "id": 7
+    }
+  ]
+}

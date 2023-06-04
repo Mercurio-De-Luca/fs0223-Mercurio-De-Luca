@@ -1,0 +1,18 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    li{
+      margin: 10px;
+      color: rgb(224, 105, 8);
+    }
+  }
+}
