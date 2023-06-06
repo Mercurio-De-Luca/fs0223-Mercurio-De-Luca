@@ -1,0 +1,101 @@
+<h1>TD from hero</h1>
+<div class="container">
+  <div class="row">
+    <form (ngSubmit)="submit(f)" #f="ngForm">
+      <div class="col-12 form-group">
+        <label for="name">Nome</label>
+        <input
+          type="text"
+          #nome="ngModel"
+          required
+          class="form-control"
+          ngModel
+          name="name"
+          placeholder="Nome"
+        />
+        <div class="alert alert-danger" *ngIf="nome.invalid && nome.touched">
+          Campo obbligatorio
+        </div>
+      </div>
+      <div class="col-12 form-group">
+        <label for="ego">Alter Ego</label>
+        <input
+          type="text"
+          #alterEgo="ngModel"
+          required
+          ngModel
+          class="form-control"
+          name="ego"
+          placeholder="Alter Ego"
+        />
+        <div
+          class="alert alert-danger"
+          *ngIf="alterEgo.invalid && alterEgo.touched"
+        >
+          Campo obbligatorio
+        </div>
+      </div>
+      <div class="col-12 form-group">
+        <label for="power">Super Potere</label>
+        <select name="power" class="form-control">
+          <option value="">Super Potere</option>
+          <option value="nessuno">Nessuno</option>
+          <option value="forza">Forza</option>
+          <option value="volare">Volare</option>
+          <option value="tutto">Tutto</option>
+        </select>
+      </div>
+      <div class="col-12 form-group">
+        <label for="nemico">Nemico</label>
+        <input
+          type="text"
+          ngModel
+          maxlength="10"
+          #nemico="ngModel"
+          class="form-control"
+          required
+          name="nemico"
+          placeholder="Nemico"
+        />
+        <div
+          class="alert alert-danger"
+          *ngIf="nemico.invalid && nemico.touched"
+        >
+          Massimo 10 caratteri
+        </div>
+      </div>
+      <div class="col-12 form-group">
+        <label for="pianeta">Pianeta</label>
+        <input
+          type="text"
+          #pianeta="ngModel"
+          ngModel
+          minlength="5"
+          required
+          class="form-control"
+          name="pianeta"
+          placeholder="Pianeta"
+        />
+        <div
+          class="alert alert-danger"
+          *ngIf="pianeta.invalid && pianeta.touched"
+        >
+          Minimo 5 caratteri
+        </div>
+      </div>
+      <div class="col-12 form-group">
+        <label for="deboleza">Debolezza</label>
+        <input
+          type="text"
+          required
+          class="form-control"
+          name="debolezza"
+          placeholder="Debolezza"
+        />
+      </div>
+      <div class="col-12">
+        <button type="button" class="btn btn-primary w-100 mt-2">Crea</button>
+      </div>
+    </form>
+  </div>
+</div>
