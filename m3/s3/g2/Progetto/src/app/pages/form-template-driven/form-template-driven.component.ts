@@ -14,11 +14,7 @@ export class FormTemplateDrivenComponent {
 
 submit(form: NgForm){
   console.log(form);
-  console.log(form.form.value);
-
   this.form.reset();
-
-
 }
 
 }
