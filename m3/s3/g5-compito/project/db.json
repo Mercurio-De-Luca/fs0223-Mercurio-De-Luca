@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "kitipakely@mailinator.com",
+      "password": "$2a$10$uayhXSPRfEL3V58dmWyBmeXj2EFJ.MoBhL0qSG3b3VO9sAYgp/ewi",
+      "nome": "Cillum ratione id a",
+      "cognome": "Nulla ullamco dolor ",
+      "id": 1
+    },
+    {
+      "email": "visyderug@mailinator.com",
+      "password": "$2a$10$a99oVEsO/BfWpY9acTR8.eN7afx8/QSp1SRpL7OAYy54vl06LdLbu",
+      "nome": "Commodi eos odit es",
+      "cognome": "Omnis modi quam dolo",
+      "id": 2
+    }
+  ]
+}
