@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
-import { BehaviorSubject, map, tap } from 'rxjs';
+import { BehaviorSubject, catchError, map, tap} from 'rxjs';
 import { environment } from 'src/environments/environment.development';
 import { IAccessData } from './interface/iaccess-data';
 import { HttpClient } from '@angular/common/http';
@@ -40,9 +40,7 @@ export class AuthService {
       return this.http.post<IAccessData>(this.apiUrl + '/login', data).pipe(tap(data => {
         this.authSubject.next(data);
         localStorage.setItem('user',JSON.stringify(data))
-
         const dataScadenza = this.jwtHelper.getTokenExpirationDate(data.accessToke) as Date ;
-
       }))
     }
 
@@ -71,4 +69,6 @@ export class AuthService {
       const expMs = expDate.getTime() - new Date().getTime();
      this.authLogoutTimer = setTimeout(() => this.logout(), expMs)
     }
+
 }
+
