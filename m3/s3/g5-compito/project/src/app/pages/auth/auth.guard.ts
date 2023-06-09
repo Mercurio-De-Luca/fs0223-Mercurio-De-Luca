@@ -22,7 +22,7 @@ constructor(
       if(isLoggedIn){
         return true
       }
-      this.router.navigate(['/auth/login'])
+      this.router.navigate(['/auth'])
       return false
       }));
   }
