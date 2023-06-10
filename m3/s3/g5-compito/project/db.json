@@ -25,13 +25,18 @@
   "auto": [
     {
       "marca": "Fiat",
-      "prezzo": 3000,
+      "prezzo": 2500,
       "id": 1
     },
     {
+      "marca": "Golf",
+      "prezzo": 7000,
+      "id": 3
+    },
+    {
       "marca": "BMW",
-      "prezzo": 37000,
-      "id": 2
+      "prezzo": 40000,
+      "id": 4
     }
   ]
 }

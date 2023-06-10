@@ -5,12 +5,14 @@ import { PostRoutingModule } from './post-routing.module';
 import { PostComponent } from './post.component';
 import { AggiungiAutoComponent } from './aggiungi-auto/aggiungi-auto.component';
 import { FormsModule } from '@angular/forms';
+import { ModificaAutoComponent } from './modifica-auto/modifica-auto.component';
 
 
 @NgModule({
   declarations: [
     PostComponent,
-    AggiungiAutoComponent
+    AggiungiAutoComponent,
+    ModificaAutoComponent
   ],
   imports: [
     CommonModule,

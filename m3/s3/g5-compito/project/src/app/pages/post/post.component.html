@@ -6,7 +6,11 @@
         <tr *ngFor="let macchina of auto">
           <td>{{ macchina.marca }}</td>
           <td>{{ macchina.prezzo | currency : "EUR" : "symbol" }}</td>
-          <td><a href="">MODIFICA</a></td>
+          <td>
+            <a [routerLink]="['/post', 'modificaAuto', macchina.id]"
+              >MODIFICA</a
+            >
+          </td>
           <td>
             <button class="btn btn-danger" (click)="delete(macchina.id)">
               ELIMINA

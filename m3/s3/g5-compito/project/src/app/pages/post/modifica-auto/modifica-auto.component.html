@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row my-5">
+    <div class="col d-flex flex-column align-items-center">
+      <form class="d-flex flex-column align-items-center">
+        <input
+          type="text"
+          class="my-2 form-control"
+          name="marca"
+          [(ngModel)]="auto.marca"
+        />
+        <input
+          type="number"
+          class="my-2 form-control"
+          name="prezzo"
+          [(ngModel)]="auto.prezzo"
+        />
+        <button class="btn btn-primary my-2" (click)="modificaAuto()">
+          MODIFICA AUTO
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
