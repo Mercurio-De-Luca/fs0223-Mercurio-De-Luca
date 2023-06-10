@@ -16,7 +16,6 @@ constructor(
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return true;
 
     return this.authSvc.isLoggedIn$.pipe(take(1),map(isLoggedIn =>{
       if(isLoggedIn){

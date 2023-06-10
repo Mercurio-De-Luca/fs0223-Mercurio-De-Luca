@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IAuto } from './iauto';
 import { AutoService } from './auto.service';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-post',
@@ -11,17 +12,22 @@ import { Router } from '@angular/router';
 export class PostComponent implements OnInit{
 
 auto: IAuto[] = [];
+loading: boolean = true;
 
 
 
 constructor(
   private autoSvc: AutoService,
-  private router: Router
+  private router: Router,
+  private authSvc: AuthService
   ){}
 
 
   ngOnInit(){
-    this.autoSvc.getAuto().subscribe(data => this.auto = data);
+    this.autoSvc.getAuto().subscribe(data => {
+      this.auto = data;
+      this.loading = false
+    });
   }
 
   delete(id:number){
@@ -31,7 +37,6 @@ constructor(
       }
 
    logout(){
-    localStorage.removeItem('user');
-    this.router.navigate(['/auth']);
+    this.authSvc.logout()
    }
 }

@@ -20,23 +20,25 @@
       "nome": "Mirko",
       "cognome": "De Luca",
       "id": 3
+    },
+    {
+      "email": "mikele@gmail.com",
+      "password": "$2a$10$MZuH3EomFVk6KYfoS8VCfuGJWqi8Zoxq8w7ZTDNo8Fh8ZBSt2zln.",
+      "nome": "Michele",
+      "cognome": "De Luca",
+      "id": 4
     }
   ],
   "auto": [
     {
       "marca": "Fiat",
-      "prezzo": 2500,
+      "prezzo": 3000,
       "id": 1
     },
     {
       "marca": "Golf",
       "prezzo": 7000,
       "id": 3
-    },
-    {
-      "marca": "BMW",
-      "prezzo": 40000,
-      "id": 4
     },
     {
       "marca": "Mercedes",
@@ -47,6 +49,16 @@
       "marca": "Maserati",
       "prezzo": 80000,
       "id": 7
+    },
+    {
+      "marca": "BMW",
+      "prezzo": 40000,
+      "id": 8
+    },
+    {
+      "marca": "BMW",
+      "prezzo": 1,
+      "id": 9
     }
   ]
 }

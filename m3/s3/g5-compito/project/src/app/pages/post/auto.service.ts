@@ -33,5 +33,4 @@ eliminaAuto(id: number){
 modifica(data: Partial<IAuto>){
   return this.http.put<IAuto>(this.apiAuto + '/' + data.id, data);
 }
-
 }

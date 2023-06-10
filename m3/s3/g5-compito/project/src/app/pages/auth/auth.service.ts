@@ -13,6 +13,7 @@ import { ILoginData } from './interface/ilogin-data';
 })
 export class AuthService {
 
+
   jwtHelper: JwtHelperService = new JwtHelperService();
 
   apiUrl = environment.url
@@ -22,7 +23,7 @@ export class AuthService {
   user$ = this.authSubject.asObservable();
   isLoggedIn$ = this.user$.pipe(map(dato => !!dato))
 
-  authLogoutTimer:any;
+
 
   constructor(
     private http: HttpClient,
@@ -59,16 +60,7 @@ export class AuthService {
     logout(){
       this.authSubject.next(null);
       localStorage.removeItem('user');
-      this.router.navigate(['/login']);
-      if(this.authLogoutTimer){
-        clearTimeout(this.authLogoutTimer);
-      }
+      this.router.navigate(['/auth']);
     }
-
-    autoLogout(expDate: Date){
-      const expMs = expDate.getTime() - new Date().getTime();
-     this.authLogoutTimer = setTimeout(() => this.logout(), expMs)
-    }
-
-}
+  }
 
