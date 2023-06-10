@@ -13,7 +13,25 @@
       "nome": "Commodi eos odit es",
       "cognome": "Omnis modi quam dolo",
       "id": 2
+    },
+    {
+      "email": "mirko@gmail.com",
+      "password": "$2a$10$kh5K8tpKplzUA68yMiCc1ORUk73zUhYOuugaQOAdTOD3wcWOtkBmu",
+      "nome": "Mirko",
+      "cognome": "De Luca",
+      "id": 3
+    }
+  ],
+  "auto": [
+    {
+      "marca": "Fiat",
+      "prezzo": 3000,
+      "id": 1
+    },
+    {
+      "marca": "BMW",
+      "prezzo": 37000,
+      "id": 2
     }
   ]
-
 }

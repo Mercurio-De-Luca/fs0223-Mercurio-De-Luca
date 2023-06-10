@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row my-5">
+    <div class="col d-flex flex-column align-items-center">
+      <form class="d-flex flex-column align-items-center">
+        <input
+          type="text"
+          class="my-2 form-control"
+          name="marca"
+          placeholder="Inserisci modello"
+          [(ngModel)]="data.marca"
+        />
+        <input
+          type="number"
+          class="my-2 form-control"
+          name="prezzo"
+          placeholder="Inserisci prezzo"
+          [(ngModel)]="data.prezzo"
+        />
+        <button class="btn btn-primary my-2" (click)="creaAuto()">
+          Aggiungi auto
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

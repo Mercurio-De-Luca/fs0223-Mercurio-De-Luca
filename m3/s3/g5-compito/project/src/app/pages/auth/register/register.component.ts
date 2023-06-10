@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IRegisterData } from '../interface/iregister-data';
 import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -16,10 +17,13 @@ export class RegisterComponent {
     password: ''
   };
 
-  constructor(private authSvc: AuthService){}
+  constructor(
+    private authSvc: AuthService,
+    private router: Router
+    ){}
 
   register(){
-    this.authSvc.register(this.data).subscribe(user => alert(user.user.nome))
+    this.authSvc.register(this.data).subscribe(user => this.router.navigate(['/post']))
   }
 
 }

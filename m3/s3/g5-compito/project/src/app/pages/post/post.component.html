@@ -1,1 +1,19 @@
-<p>post works!</p>
+<div class="container">
+  <a class="btn btn-primary" [routerLink]="['aggAuto']">Aggiungi auto</a>
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <tr *ngFor="let macchina of auto">
+          <td>{{ macchina.marca }}</td>
+          <td>{{ macchina.prezzo | currency : "EUR" : "symbol" }}</td>
+          <td><a href="">MODIFICA</a></td>
+          <td>
+            <button class="btn btn-danger" (click)="delete(macchina.id)">
+              ELIMINA
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
