@@ -37,6 +37,16 @@
       "marca": "BMW",
       "prezzo": 40000,
       "id": 4
+    },
+    {
+      "marca": "Mercedes",
+      "prezzo": 27000,
+      "id": 6
+    },
+    {
+      "marca": "Maserati",
+      "prezzo": 80000,
+      "id": 7
     }
   ]
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IAuto } from './iauto';
 import { AutoService } from './auto.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-post',
@@ -14,7 +15,8 @@ auto: IAuto[] = [];
 
 
 constructor(
-  private autoSvc: AutoService
+  private autoSvc: AutoService,
+  private router: Router
   ){}
 
 
@@ -27,4 +29,9 @@ constructor(
       {let index = this.auto.findIndex(p => p.id == id)
       this.auto.splice(index,1)})
       }
+
+   logout(){
+    localStorage.removeItem('user');
+    this.router.navigate(['/auth']);
+   }
 }
