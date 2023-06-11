@@ -2,7 +2,7 @@ import { IRegisterData } from './../interface/iregister-data';
 import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -29,10 +29,10 @@ export class RegisterComponent {
 
     ngOnInit(){
       this.form = new FormGroup({
-        nome: new FormControl(null),
-        cognome: new FormControl(null),
-        email: new FormControl(null),
-        password: new FormControl(null),
+        nome: new FormControl(null, Validators.required),
+        cognome: new FormControl(null, Validators.required),
+        email: new FormControl(null,  Validators.required),
+        password: new FormControl(null,  Validators.required),
       });
     }
 

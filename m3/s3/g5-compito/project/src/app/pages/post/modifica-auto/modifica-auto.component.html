@@ -6,12 +6,14 @@
           type="text"
           class="my-2 form-control"
           name="marca"
+          required
           [(ngModel)]="auto.marca"
         />
         <input
           type="number"
           class="my-2 form-control"
           name="prezzo"
+          required
           [(ngModel)]="auto.prezzo"
         />
         <button class="btn btn-primary my-2" (click)="modificaAuto()">
