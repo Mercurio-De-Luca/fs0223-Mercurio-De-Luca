@@ -2,22 +2,26 @@
   <div class="row">
     <div class="col d-flex flex-column align-items-center">
       <h3>Login</h3>
-      <form class="d-flex flex-column align-items-center">
+      <form
+        class="d-flex flex-column align-items-center"
+        (ngSubmit)="login()"
+        [formGroup]="form"
+      >
         <input
           class="my-2 form-control"
           type="email"
           name="email"
           placeholder="Email"
-          [(ngModel)]="data.email"
+          formControlName="email"
         />
         <input
           class="my-2 form-control"
           type="password"
           name="password"
           placeholder="Password"
-          [(ngModel)]="data.password"
+          formControlName="password"
         />
-        <button class="btn btn-primary my-2" (click)="login()">Accedi</button>
+        <button class="btn btn-primary my-2">Accedi</button>
       </form>
       <p>Non hai un account?</p>
       <a [routerLink]="['/auth', 'register']">Registrati</a>

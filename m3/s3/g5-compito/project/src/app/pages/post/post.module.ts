@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PostRoutingModule } from './post-routing.module';
 import { PostComponent } from './post.component';
 import { AggiungiAutoComponent } from './aggiungi-auto/aggiungi-auto.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModificaAutoComponent } from './modifica-auto/modifica-auto.component';
 
 
@@ -17,7 +17,8 @@ import { ModificaAutoComponent } from './modifica-auto/modifica-auto.component';
   imports: [
     CommonModule,
     PostRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PostModule { }

@@ -27,6 +27,13 @@
       "nome": "Michele",
       "cognome": "De Luca",
       "id": 4
+    },
+    {
+      "email": "pepuzyleze@mailinator.com",
+      "password": "$2a$10$j5FYIl.65pLbnZ0xbmmZ9ObhvjgeMut7nqBFCrnqtfPuYelLHWycy",
+      "nome": "Voluptatibus volupta",
+      "cognome": "Amet sed sit exerc",
+      "id": 5
     }
   ],
   "auto": [
@@ -54,11 +61,6 @@
       "marca": "BMW",
       "prezzo": 40000,
       "id": 8
-    },
-    {
-      "marca": "BMW",
-      "prezzo": 1,
-      "id": 9
     }
   ]
 }

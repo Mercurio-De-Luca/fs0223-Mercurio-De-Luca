@@ -1,7 +1,8 @@
+import { IRegisterData } from './../interface/iregister-data';
 import { Component } from '@angular/core';
-import { IRegisterData } from '../interface/iregister-data';
 import { AuthService } from '../auth.service';
 import { Router } from '@angular/router';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -10,20 +11,38 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent {
 
-  data: IRegisterData = {
-    nome: '',
-    cognome: '',
-    email: '',
-    password: ''
-  };
+  form!: FormGroup
+
+  // data: IRegisterData = {
+  //   nome: '',
+  //   cognome: '',
+  //   email: '',
+  //   password: ''
+  // };
+
 
   constructor(
     private authSvc: AuthService,
     private router: Router
     ){}
 
-  register(){
-    this.authSvc.register(this.data).subscribe(user => this.router.navigate(['/post']))
-  }
+
+    ngOnInit(){
+      this.form = new FormGroup({
+        nome: new FormControl(null),
+        cognome: new FormControl(null),
+        email: new FormControl(null),
+        password: new FormControl(null),
+      });
+    }
+
+
+  // reg(){
+  //   this.authSvc.register(this.data).subscribe(user => this.router.navigate(['/post']))
+  // }
+
+    onSubmit(){
+      this.authSvc.register(this.form.value).subscribe(user => this.router.navigate(['/post']))
+    }
 
 }

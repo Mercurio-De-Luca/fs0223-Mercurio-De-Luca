@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { IRegisterData } from './interface/iregister-data';
 import { ILoginData } from './interface/ilogin-data';
+import { FormGroup } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root'
@@ -33,7 +34,7 @@ export class AuthService {
    }
 
 
-    register(data: IRegisterData){
+    register(data: FormGroup){
       return this.http.post<IAccessData>(this.apiUrl + '/register',data)
     }
 

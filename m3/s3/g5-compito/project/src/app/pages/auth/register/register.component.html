@@ -2,38 +2,40 @@
   <div class="row my-5">
     <div class="col d-flex flex-column align-items-center">
       <h3>Login</h3>
-      <form class="d-flex flex-column align-items-center">
+      <form
+        class="d-flex flex-column align-items-center"
+        [formGroup]="form"
+        (ngSubmit)="onSubmit()"
+      >
         <input
           type="text"
           class="my-2 form-control"
           name="nome"
           placeholder="Nome"
-          [(ngModel)]="data.nome"
+          formControlName="nome"
         />
         <input
           type="text"
           class="my-2 form-control"
           name="cognome"
           placeholder="Cognome"
-          [(ngModel)]="data.cognome"
+          formControlName="cognome"
         />
         <input
           class="my-2 form-control"
           type="email"
           name="email"
           placeholder="Email"
-          [(ngModel)]="data.email"
+          formControlName="email"
         />
         <input
           class="my-2 form-control"
           type="password"
           name="password"
           placeholder="Password"
-          [(ngModel)]="data.password"
+          formControlName="password"
         />
-        <button class="btn btn-primary my-2" (click)="register()">
-          Registrati
-        </button>
+        <button class="btn btn-primary my-2" type="submit">Registrati</button>
       </form>
     </div>
   </div>
